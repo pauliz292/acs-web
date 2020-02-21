@@ -1,5 +1,4 @@
 {
-    "proxyUrl": "https://cors-anywhere.herokuapp.com/",
     "baseUrl": "https://rentacar.ivf-app.com/",
     "apiUrl": "https://rentacar.ivf-app.com/api",
     "apiEndpoint": "https://jsonplaceholder.typicode.com/posts"
