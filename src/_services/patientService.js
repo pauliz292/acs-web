@@ -4,7 +4,7 @@ import { boundGetAllPatients } from "../_actions/patientActions";
 
 const apiEndpoint = apiUrl + "/patients";
 
-export function getCars() {
+export function getPatients() {
     const patients = http.get(apiEndpoint);
     if (patients) {
         boundGetAllPatients(patients);

@@ -1,0 +1,36 @@
+// Main App SASS
+.container {
+    padding: 20px;
+    h1, h2 {
+        color: #2c2c2c;
+        font-weight: 600;
+        font-size: 22px;
+    }
+    
+    h3, h4 {
+        color: #2c2c2c;
+        font-weight: 500;
+        font-size: 18px;
+    }
+
+    // log in page
+    .login-wrapper {
+        margin: auto;
+        height: 500px;
+        width: 400px;
+        background-color: #eeeeee;
+        text-align: center;
+        .login-header {
+            height: 100px;
+            padding: 20px;
+            background-color: darken($color: #494848, $amount: 0);
+            h2, p {
+                color: #ffffff;
+            }
+        }
+
+        .login-form {
+            padding: 20px;
+        }
+    }
+}
