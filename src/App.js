@@ -7,14 +7,16 @@ import {
 import './App.css';
 
 import Home from "./components/home/home";
+import Login from './components/login/login';
 
 function App() {
   return (
     <Router className="App">
       <div>
         <Switch>
-          <Route exact path="/">
-            <Home />
+          <Route exact path="/" component={Login}>
+          </Route>
+          <Route path="/home" component={Home}>
           </Route>
         </Switch>
       </div>

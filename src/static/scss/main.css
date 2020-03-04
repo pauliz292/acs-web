@@ -1,0 +1,38 @@
+.container {
+  padding: 20px;
+}
+
+.container h1, .container h2 {
+  color: #2c2c2c;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.container h3, .container h4 {
+  color: #2c2c2c;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.container .login-wrapper {
+  margin: auto;
+  height: 500px;
+  width: 400px;
+  background-color: #eeeeee;
+  text-align: center;
+}
+
+.container .login-wrapper .login-header {
+  height: 100px;
+  padding: 20px;
+  background-color: #494848;
+}
+
+.container .login-wrapper .login-header h2, .container .login-wrapper .login-header p {
+  color: #ffffff;
+}
+
+.container .login-wrapper .login-form {
+  padding: 20px;
+}
+/*# sourceMappingURL=main.css.map */
