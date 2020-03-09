@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
+// import styles from '../../static/scss/main.scss';
 
 export default function Login() {
 
@@ -28,7 +29,7 @@ export default function Login() {
     }
 
     return (
-        <div className="container">
+        <div className="container" style={bg_style}>
             <div className="login-wrapper">
                 <div className="login-header">
                     <h2>ACS</h2>
@@ -68,4 +69,11 @@ export default function Login() {
             </div>
         </div>
     )
+}
+
+let imgUrl = '../../static/images/bg.jpg';
+let bg_style = {
+    backgroundImage: `url(${ imgUrl })`,
+    backgroundRepeat  : 'no-repeat',
+    backgroundPosition: 'center',
 }
