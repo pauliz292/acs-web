@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function SideBar() {
     return (
@@ -35,22 +36,22 @@ export default function SideBar() {
                         </a>
                         <ul className="nav nav-treeview">
                             <li className="nav-item">
-                            <a href="./index.html" className="nav-link">
-                                <i className="far fa-circle nav-icon" />
-                                <p>Patients</p>
-                            </a>
+                                <Link to="/main/patients" className="nav-link active">
+                                    <i className="far fa-circle nav-icon" />
+                                    <p>Patients</p>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                            <a href="./index2.html" className="nav-link active">
-                                <i className="far fa-circle nav-icon" />
-                                <p>Appointments</p>
-                            </a>
+                                <Link to="/main/patients" className="nav-link active">
+                                    <i className="far fa-circle nav-icon" />
+                                    <p>Appointments</p>
+                                </Link>
                             </li>
                             <li className="nav-item">
-                            <a href="./index3.html" className="nav-link">
-                                <i className="far fa-circle nav-icon" />
-                                <p>Transactions</p>
-                            </a>
+                                <Link to="/main/patients" className="nav-link active">
+                                    <i className="far fa-circle nav-icon" />
+                                    <p>Transactions</p>
+                                </Link>
                             </li>
                         </ul>
                         </li>
