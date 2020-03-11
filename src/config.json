@@ -1,5 +1,4 @@
 {
-    "baseUrl": "https://rentacar.ivf-app.com/",
-    "apiUrl": "https://rentacar.ivf-app.com/api",
-    "apiEndpoint": "https://jsonplaceholder.typicode.com/posts"
+    "baseUrl": "https://localhost:5001",
+    "apiUrl": "https://localhost:5001/api"
 }

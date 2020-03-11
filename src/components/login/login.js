@@ -22,7 +22,7 @@ export default function Login() {
         if (email === "admin" &&
             password === "admin123"
         ) {
-            history.push('/home');
+            history.push('/main');
         } else {
             alert("Email or password not found.")
         }
