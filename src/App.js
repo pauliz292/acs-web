@@ -6,26 +6,19 @@ import {
 } from "react-router-dom";
 import './App.css';
 
-import Home from "./components/home/home";
+import MainLayout from "./components/home/mainLayout";
 import Login from './components/login/login';
-
-import Header from './components/home/header';
-import SideBar from './components/home/sidebar';
-import Footer from './components/home/footer';
 
 function App() {
   return (
     <Router className="App">
       <div>
-        <Header />
-        <SideBar />
         <Switch>
           <Route exact path="/" component={Login}>
           </Route>
-          <Route path="/home" component={Home}>
+          <Route path="/main" component={MainLayout}>
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );

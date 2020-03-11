@@ -3,7 +3,7 @@ import React from 'react';
 export default function Home() {
     return (
         <div className="container">
-            <h1>Dashboard</h1>
+            <h1>Welcome to ACS!</h1>
         </div>
     )
 }
