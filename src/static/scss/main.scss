@@ -13,3 +13,30 @@
         width: 920px;
     }
 }
+
+.login-wrapper {
+    background: #03A9F4;
+    width: 420px;
+    height: 520px;
+    margin: 40px auto;
+    text-align: center;
+    border-radius: 20px;
+
+    .login-header {
+        background: #1565C0;
+        padding: 10px;
+        border-radius: inherit;
+        h2, p {
+            color: #FAFAFA;
+        }
+    }
+
+    .login-form {
+        width: 320px;
+        margin: 20px auto;
+
+        .button-primary {
+            background-color: #0097A7;
+        }
+    }
+}

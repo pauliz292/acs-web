@@ -9,7 +9,7 @@ http.setJwt(getJwt());
 
 export async function login(email, password) {
     const { data: jwt } = await http.post(apiEndpoint + "/login", {
-        username: email,
+        email,
         password
     });
 
