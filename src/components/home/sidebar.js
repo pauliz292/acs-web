@@ -27,31 +27,36 @@ export default function SideBar() {
                         {/* Add icons to the links using the .nav-icon class
                             with font-awesome or any other icon font library */}
                         <li className="nav-item has-treeview menu-open">
-                        <a href="fake" className="nav-link active">
-                            <i className="nav-icon fas fa-tachometer-alt" />
-                            <p>
-                            Dashboard
-                            <i className="right fas fa-angle-left" />
-                            </p>
-                        </a>
+                            <a href="fake" className="nav-link active">
+                                <i className="nav-icon fas fa-tachometer-alt" />
+                                <p>
+                                Dashboard
+                                <i className="right fas fa-angle-left" />
+                                </p>
+                            </a>
                         <ul className="nav nav-treeview">
-                            <li className="nav-item">
-                                <Link to="/main/patients" className="nav-link active">
-                                    <i className="far fa-circle nav-icon" />
-                                    <p>Patients</p>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/main/patients" className="nav-link active">
-                                    <i className="far fa-circle nav-icon" />
-                                    <p>Appointments</p>
-                                </Link>
-                            </li>
-                            <li className="nav-item">
-                                <Link to="/main/patients" className="nav-link active">
-                                    <i className="far fa-circle nav-icon" />
-                                    <p>Transactions</p>
-                                </Link>
+                            <li className="nav-item has-treeview">
+                                <a href="#" className="nav-link">
+                                    <i className="nav-icon fa fa-users" />
+                                    <p>
+                                        Patients
+                                        <i className="fas fa-angle-left right" />
+                                    </p>
+                                </a>
+                                <ul className="nav nav-treeview">
+                                    <li className="nav-item">
+                                        <Link to="/main/patients" className="nav-link">
+                                            <i className="far fa-user nav-icon" />
+                                            <p>Patients List</p>
+                                        </Link>
+                                    </li>
+                                    <li className="nav-item">
+                                        <Link to="/main" className="nav-link">
+                                            <i className="fa fa-user-plus nav-icon" />
+                                            <p>Patients Form</p>
+                                        </Link>
+                                    </li>
+                                </ul>
                             </li>
                         </ul>
                         </li>
