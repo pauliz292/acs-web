@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { useHistory } from 'react-router-dom';
-// import styles from '../../static/scss/main.scss';
+import auth from '../../_services/authService';
 
 export default function Login() {
 
@@ -19,12 +19,15 @@ export default function Login() {
 
     const onLogin = e => {
         e.preventDefault();
-        if (email === "admin" &&
-            password === "admin123"
-        ) {
-            history.push('/main');
-        } else {
-            alert("Email or password not found.")
+        if (email && password) {
+            auth.login(email, password)
+            .then(() => {
+                history.push('/main')
+            })
+            .catch(err => {
+                alert("Email or password not found.")
+                console.log(err.message);
+            })
         }
     }
 
@@ -58,7 +61,7 @@ export default function Login() {
                             />
                         </Form.Group>
                         <Button 
-                            variant="primary" 
+                            className="button-primary" 
                             type="submit" 
                             onClick={onLogin}
                         >
