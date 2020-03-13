@@ -2,7 +2,7 @@ import http from "./httpService";
 import { apiUrl } from "../config.json";
 import { boundGetAllPatients } from "../_actions/patientActions";
 
-const apiEndpoint = apiUrl + "/patient" + "/list";
+const apiEndpoint = apiUrl + "/patient";
 
 export function getPatients() {
     http.get(apiEndpoint)
