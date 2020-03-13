@@ -34,7 +34,7 @@ export default function Header() {
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                     <button className="btn btn-default" onClick={onLogOut}>
-                        <i className="fas fa-sign-out-alt" /><span>Log Out</span>
+                        <i className="fas fa-sign-out-alt" /><span> Log Out</span>
                     </button>
                 </li>
             </ul>
