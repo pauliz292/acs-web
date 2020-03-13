@@ -8,6 +8,7 @@ import './App.css';
 
 import MainLayout from "./components/home/mainLayout";
 import Login from './components/login/login';
+import ProtectedRoute from './components/_common/protectedRoute';
 
 function App() {
   return (
@@ -16,8 +17,8 @@ function App() {
         <Switch>
           <Route exact path="/" component={Login}>
           </Route>
-          <Route path="/main" component={MainLayout}>
-          </Route>
+          <ProtectedRoute path="/main" component={MainLayout}>
+          </ProtectedRoute>
         </Switch>
       </div>
     </Router>
