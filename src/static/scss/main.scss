@@ -14,29 +14,57 @@
     }
 }
 
-.login-wrapper {
-    background: #03A9F4;
-    width: 420px;
-    height: 520px;
-    margin: 40px auto;
-    text-align: center;
-    border-radius: 20px;
+.login-container {
+    background: url("../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 768px;
+    padding: 5%;
 
-    .login-header {
-        background: #1565C0;
-        padding: 10px;
-        border-radius: inherit;
-        h2, p {
-            color: #FAFAFA;
+    .login-wrapper {
+        background: #03A9F4;
+        width: 420px;
+        height: 520px;
+        margin: 40px auto;
+        text-align: center;
+        border-radius: 20px;
+    
+        .login-header {
+            background: #1565C0;
+            padding: 10px;
+            border-radius: inherit;
+            h2, p {
+                color: #FAFAFA;
+            }
         }
-    }
+    
+        .login-form {
+            width: 320px;
+            margin: 20px auto;
 
-    .login-form {
-        width: 320px;
-        margin: 20px auto;
+            .text-muted {
+                color: #E1F5FE !important;
+            }
 
-        .button-primary {
-            background-color: #0097A7;
+            .button-group {
+                padding: 2%;
+
+                .button-primary {
+                    border: none;
+                    background-color: #0097A7;
+                    width: 100%;
+                }
+
+                .button-default {
+                    border: none;
+                    background-color: #FAFAFA;
+                    width: 100%;
+                    color: #0D47A1;
+                }
+            }
+    
         }
     }
 }

@@ -1,8 +1,5 @@
 import store from "../store";
-
-// ACTION -> DESCRIPTION OF TASK RETURNS OBJ
-export const GET_ALL_PATIENTS = 'GET_ALL_PATIENTS';
-export const GET_PATIENT = 'GET_PATIENT';
+import { GET_ALL_PATIENTS, GET_PATIENT } from './_types';
 
 const getAllPatients = patients => {
     return{

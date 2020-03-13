@@ -32,7 +32,7 @@ export default function Login() {
     }
 
     return (
-        <div className="container" style={bg_style}>
+        <div className="login-container">
             <div className="login-wrapper">
                 <div className="login-header">
                     <h2>ACS</h2>
@@ -43,7 +43,7 @@ export default function Login() {
                         <Form.Group controlId="formBasicEmail">
                             <Form.Control 
                                 type="email" 
-                                placeholder="Enter email" 
+                                placeholder="Email" 
                                 onChange={handleEmail}
                                 value={email}
                             />
@@ -60,23 +60,26 @@ export default function Login() {
                                 value={password}
                             />
                         </Form.Group>
-                        <Button 
-                            className="button-primary" 
-                            type="submit" 
-                            onClick={onLogin}
-                        >
-                            Login
-                        </Button>
+                        <div className="button-group">
+                            <Button 
+                                className="button-primary" 
+                                type="submit" 
+                                onClick={onLogin}
+                            >
+                                Login
+                            </Button>
+                        </div>
+                        <div className="button-group">
+                            <Button 
+                                className="button-default" 
+                                type="submit" 
+                            >
+                                Login with facebook
+                            </Button>
+                        </div>
                     </Form>
                 </div>
             </div>
         </div>
     )
-}
-
-let imgUrl = '../../static/images/bg.jpg';
-let bg_style = {
-    backgroundImage: `url(${ imgUrl })`,
-    backgroundRepeat  : 'no-repeat',
-    backgroundPosition: 'center',
 }
