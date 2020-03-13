@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 const PatientsTable = () => {
 
     const patients = useSelector(state => state.patientReducer.patients);
+    const setGender = sex => {return sex === 1 ? "Male" : "Female"};
 
     return (
         <table className="table table-hover">
@@ -20,7 +21,7 @@ const PatientsTable = () => {
                     <tr key={patient.id}>
                         <td>{i + 1}</td>
                         <td>{patient.name}</td>
-                        <td>{patient.sex}</td>
+                        <td>{setGender(patient.sex)}</td>
                         <td>{patient.occupation}</td>
                     </tr>
                 ))}
