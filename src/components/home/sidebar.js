@@ -35,13 +35,13 @@ export default function SideBar() {
                             </Link>
                         </li>
                         <li className="nav-item has-treeview">
-                            <a href="fake" className="nav-link">
+                            <span className="nav-link">
                                 <i className="nav-icon fa fa-users" />
                                 <p>
                                     Patients
                                     <i className="fas fa-angle-left right" />
                                 </p>
-                            </a>
+                            </span>
                             <ul className="nav nav-treeview">
                                 <li className="nav-item">
                                     <Link to="/main/patients" className="nav-link">
@@ -50,7 +50,7 @@ export default function SideBar() {
                                     </Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link to="/main" className="nav-link">
+                                    <Link to="/main/addPatient" className="nav-link">
                                         <i className="fa fa-user-plus nav-icon" />
                                         <p>Patients Form</p>
                                     </Link>
