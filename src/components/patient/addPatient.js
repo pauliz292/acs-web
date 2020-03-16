@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import { Form, Button, Col } from 'react-bootstrap';
 
-const AddPatient = () => {
+const AddPatient = props => {
     const setGender = gender => {return gender === "Male" ? 1 : 2 }
 
     // input boxes {ref} declaration
@@ -35,7 +35,7 @@ const AddPatient = () => {
             "MaritalStatus": inputMaritalStatus.current.value,
             "Occupation": inputEmail.current.value,
         }
-        console.log(patient);
+        props.getPatient(patient);
     }
 
     return (

@@ -1,8 +1,7 @@
 import React, { useRef } from 'react';
 import { Form, Col, Button } from 'react-bootstrap';
 
-const AddEmergencyContacts = () => {
-    let emergencyContacts = [];
+const AddEmergencyContacts = props => {
 
     // input {ref} declaration
     let inputFirstName = useRef("");
@@ -17,8 +16,8 @@ const AddEmergencyContacts = () => {
 
     const onSubmit = e => {
         e.preventDefault();
-        let name = inputFirstName.current.value + inputMiddleName.current.value + 
-            inputLastName.current.value;
+        let name = inputFirstName.current.value + " " + inputMiddleName.current.value + 
+        " " + inputLastName.current.value;
         let emergencyContact = {
             "Name": name,
             "RelationShipToPatient": inputRelation.current.value,
@@ -28,8 +27,7 @@ const AddEmergencyContacts = () => {
             "MaritalStatus": inputMaritalStatus.current.value,
             "Occupation": inputOccupation.current.value
         };
-        emergencyContacts.push(emergencyContact);
-        console.log(emergencyContacts);
+        props.getEmergencyContacts(emergencyContact);
     }
 
     return (
