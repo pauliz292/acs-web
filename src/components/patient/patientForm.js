@@ -4,6 +4,7 @@ import AddPatient from './addPatient';
 import AddEmergencyContacts from './addEmergencyContacts';
 
 const PatientForm = () => {
+
     return (
         <div className="content-wrapper">
             <h1>Add Patient</h1>
