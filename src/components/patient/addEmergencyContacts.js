@@ -4,7 +4,6 @@ import { Form, Col, Button } from 'react-bootstrap';
 const AddEmergencyContacts = () => {
     return (
         <div className="patient-form">
-            <h3>Add Emergency Contacts</h3>
             <Form>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridFirstName">
@@ -70,9 +69,11 @@ const AddEmergencyContacts = () => {
                 
                     <Form.Group as={Col} controlId="formGridStatus">
                         <Form.Label>Marital Status</Form.Label>
-                        <Form.Control as="select" value="Choose...">
-                            <option>Choose...</option>
-                            <option>...</option>
+                        <Form.Control as="select">
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Widowed</option>
+                            <option>Others</option>
                         </Form.Control>
                     </Form.Group>
                 </Form.Row>
