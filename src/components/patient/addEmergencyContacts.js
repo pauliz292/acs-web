@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import { Form, Button, Col } from 'react-bootstrap';
+import React from 'react';
+import { Form, Col, Button } from 'react-bootstrap';
 
-const AddPatient = () => {
+const AddEmergencyContacts = () => {
     return (
         <div className="patient-form">
+            <h3>Add Emergency Contacts</h3>
             <Form>
                 <Form.Row>
                     <Form.Group as={Col} controlId="formGridFirstName">
@@ -28,9 +29,14 @@ const AddPatient = () => {
                         <Form.Control type="email" placeholder="Enter email" />
                     </Form.Group>
                 
-                    <Form.Group as={Col} controlId="formGridBirthday">
-                        <Form.Label>Birthday</Form.Label>
-                        <Form.Control type="date" />
+                    <Form.Group as={Col} controlId="formGridPhone">
+                        <Form.Label>Phone Number</Form.Label>
+                        <Form.Control type="text" />
+                    </Form.Group>
+
+                    <Form.Group as={Col} controlId="formGridOccupation">
+                        <Form.Label>Occupation</Form.Label>
+                        <Form.Control type="text" />
                     </Form.Group>
                 </Form.Row>
             
@@ -55,59 +61,21 @@ const AddPatient = () => {
                         <Form.Control />
                     </Form.Group>
                 </Form.Row>
-                <hr/>
 
                 <Form.Row>
-                    <Form.Group as={Col} controlId="formGridIdentification">
-                        <Form.Label>Identification</Form.Label>
+                    <Form.Group as={Col} controlId="formGridRelationship">
+                        <Form.Label>Relationship to Patient</Form.Label>
                         <Form.Control />
                     </Form.Group>
                 
-                    <Form.Group as={Col} controlId="formGridGender">
-                        <Form.Label>Gender</Form.Label>
-                        <Form.Control as="select" value="Choose...">
-                            <option>Choose...</option>
-                            <option>...</option>
-                        </Form.Control>
-                    </Form.Group>
-                
-                    <Form.Group as={Col} controlId="formGridContact">
-                        <Form.Label>Contact No.</Form.Label>
-                        <Form.Control />
-                    </Form.Group>
-                </Form.Row>
-
-                <Form.Row>
-                    <Form.Group as={Col} controlId="formGridMaritalStatus">
+                    <Form.Group as={Col} controlId="formGridStatus">
                         <Form.Label>Marital Status</Form.Label>
                         <Form.Control as="select" value="Choose...">
                             <option>Choose...</option>
                             <option>...</option>
                         </Form.Control>
                     </Form.Group>
-                
-                    <Form.Group as={Col} controlId="formGridOccupation">
-                        <Form.Label>Occupation</Form.Label>
-                        <Form.Control />
-                    </Form.Group>
                 </Form.Row>
-                <hr />
-
-                <Form.Row>
-                    <Form.Group as={Col} controlId="formGridSSS">
-                        <Form.Label>SSS No.</Form.Label>
-                        <Form.Control />
-                    </Form.Group>
-
-                    <Form.Group as={Col} controlId="formGridPHIC">
-                        <Form.Label>PHIC No.</Form.Label>
-                        <Form.Control />
-                    </Form.Group>
-                </Form.Row>
-
-                <Form.Group id="formGridCheckbox">
-                    <Form.Check type="checkbox" label="with HMO?" />
-                </Form.Group>
             
                 <Button variant="primary" type="submit">
                     Submit
@@ -117,4 +85,4 @@ const AddPatient = () => {
     )
 }
 
-export default AddPatient;
+export default AddEmergencyContacts;

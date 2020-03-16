@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 import ProtectedRoute from '../_common/protectedRoute';
 import Patients from '../patient/patients';
-import PatientForm from '../patient/addPatient';
+import PatientForm from '../patient/patientForm';
 import Dashboard from '../dashboard';
 
 const PageRoutes = props => {
